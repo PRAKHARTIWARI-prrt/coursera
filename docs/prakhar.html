@@ -4,8 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prakhar Tiwari | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 0 20px;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 0;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .project {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Prakhar Tiwari</h1>
@@ -37,19 +112,17 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <form id="contact-form">
+    <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <p id="response-message"></p>
   </section>
 
   <footer>
     <p>© 2025 Prakhar Tiwari</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
