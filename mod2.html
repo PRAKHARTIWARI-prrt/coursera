@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+    <style>
+      * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+      h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 20px;
+    }
+      .row {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+      .col {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: gray;
+  position: relative;
+  min-height: 200px;
+}
+
+    .section-title {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #ccc;
+      border: 1px solid black;
+      padding: 5px 10px;
+      font-size: 1.2em;
+    }
+      
+    .chicken {
+      background-color: #f4cccc;
+    }
+
+    .sushi {
+      background-color: #c9daf8;
+    }
+
+    .fish {
+      background-color: #d9ead3;
+    }
+    #box{
+      background-color: gray;
+      width:300px;
+      height:200px; 
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col {
+        width: 50%;
+      }
+
+      .col:nth-child(3) {
+        width: 100%;
+      }
+    }
+    @media (max-width: 767px) {
+      .col {
+        width: 100%;
+      }
+    }
+
+  </style>
+  </head>
+    <body>
+      <header>
+        <h1>Our Menu</h1>
+      </header>
+      <div class="row">
+    <div class="col chicken">
+      <div class="section-title">Chicken</div>
+      <p>
+        - Chicken breasts<br>
+        - Olive oil<br>
+        - Garlic (minced)<br>
+        - Lemon juice<br>
+        - Paprika<br>
+        - Black pepper<br>
+        - Salt<br>
+        - Fresh herbs (thyme or rosemary)
+      </p>
+      </div>
+    <div class="col sushi">
+      <div class="section-title">Sushi</div>
+      <p>
+        - Sushi rice<br>
+        - Nori (seaweed sheets)<br>
+        - Cucumber<br>
+        - Avocado<br>
+        - Imitation crab or raw fish<br>
+        - Rice vinegar<br>
+        - Soy sauce<br>
+        - Wasabi & pickled ginger
+      </p>
+      </div>
+    <div class="col fish">
+      <div class="section-title">fish</div>
+      <p>
+        - fish
+        - Soy sauce
+        - Ginger (grated)
+        - Garlic
+        - Bell peppers
+        - Onion
+        - Cornstarch
+        - Sesame oil
+      </p>
+      </div>
+    </body>
+  </html>
