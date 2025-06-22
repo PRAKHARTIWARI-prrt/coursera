@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Module 3 JavaScript Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: green;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Portfolio</h1>
+  <p>Click the button to get a surprise greeting!</p>
+
+  <button onclick="showMessage()">Click Me!</button>
+
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.body.style.backgroundColor = "#e0ffe0"; 
+      document.getElementById("message").innerHTML = "Hello Thanks for visiting ";
+    }
+  </script>
+
+</body>
+</html>
