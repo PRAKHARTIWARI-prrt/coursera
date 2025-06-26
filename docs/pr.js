@@ -1,7 +1,7 @@
 
 document.body.style.margin = "0";
 document.body.style.fontFamily = "Arial, sans-serif";
-document.body.style.backgroundColor = "#f4f4f4";
+document.body.style.backgroundColor = "yellow";
 document.body.style.display = "flex";
 document.body.style.flexDirection = "column";
 document.body.style.alignItems = "center";
