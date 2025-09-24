@@ -3,56 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buttons in Boxes</title>
+    <title>Halo Health</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #3498db, #2c3e50);
+            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .dashboard-container {
+            padding: 20px;
+        }
+
+        .dashboard-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            padding: 50px;
-            background-color: #7CFC00;
         }
-        .box {
-            background-color: #7FFFD4;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            width: 200px;
-            height: 150px;
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            color: #333;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .card button {
+            background-color: #ffc107;
             border: none;
-            border-radius: 5px;
-            background-color: #7FFFD4;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            color: #333;
         }
-        button:hover {
-            background-color: #7FFFD4;
+        .c {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .c button{
+            background-color: #ffc107;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            color: #333;    
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <button>Weight Loss</button>
+
+<div class="dashboard-container">
+    <h1>Welcome to Your Student Dashboard</h1>
+    <div class="card-grid">
+        <div class="card">
+            <h2>Weight Gain</h2>
+            <button>-></button>
+        </div>
+        <div class="card">
+            <h2>Weight Loss </h2>
+            <button>-></button>
+        </div>
+        <div class="card">
+            <h2>Muscle gain</h2>
+            <button>-></button>
+        </div>
+        <div class="card">
+            <h2>Muscle Endurance</h2>
+            <button>-></button>
+        </div>
+        <div>
+            <div class="c">
+                <h2>Spine Flexibility/Hip Mobility</h2>
+                <button>-></button>
     </div>
-    <div class="box">
-        <button>Weight Gain</button>
+</div>
     </div>
-    <div class="box">
-        <button>Muscle Gain</button>
-    </div>
-    <div class="box">
-        <button>Strength Gain</button>
-    </div>
-    <div class="box">
-      <button>Hip mobility/Spine flexibility</button>
 </body>
 </html>
