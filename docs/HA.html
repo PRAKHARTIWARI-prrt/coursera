@@ -17,7 +17,6 @@
       flex-direction: column; 
       min-height: 100vh;
     }
-    /* Header */
     #header-nav {
       background-color: #166534;
       border-radius: 0;
@@ -34,13 +33,11 @@
       color: #f0f0f0;
       font-size: 14px;
     }
-    /* Layout container (sidebar + content) */
     .content-wrapper {
       flex: 1;
       display: flex;
-      min-height: calc(100vh - 160px); /* header + footer space */
+      min-height: calc(100vh - 160px); 
     }
-    /* Sidebar full height */
     .sidebar {
       width: 200px;
       background-color: #fff;
@@ -58,7 +55,7 @@
     .sidebar a:hover {
       text-decoration: underline;
     }
-    /* Main content beside sidebar */
+
     .main-content {
       flex: 1;
       display: flex;
@@ -66,7 +63,7 @@
       align-items: flex-start;
       padding: 40px;
     }
-    /* Form box */
+
     .login-box {
       width: 100%;
       max-width: 500px;
@@ -93,7 +90,6 @@
       background-color: #14532d;
       color: #fff;
     }
-    /* Footer */
     .d {
       background: #166534;
       color: #fff;
@@ -109,7 +105,6 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container-fluid">
@@ -124,8 +119,6 @@
       </div>
     </nav>
   </header>
-
-  <!-- Sidebar + Main -->
   <div class="content-wrapper">
     <div class="sidebar">
       <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
@@ -155,7 +148,6 @@
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="d">
       <h2>HaloHealth</h2>
