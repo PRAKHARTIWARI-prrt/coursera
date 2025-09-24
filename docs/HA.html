@@ -101,14 +101,15 @@
     }
     .sidebar{
       width: 200px;
-      padding-top: 40px; 
-      height:700px;           
+      height: calc(100vh - 120px);
+      padding-top: 40px;          
     background-color: white;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 20px;
       border-right: 2px solid #166534;
+      top: 120px;
     }
     .sidebar a{
       color:green;
@@ -118,6 +119,7 @@
     }
     .main-content {
     margin-left: 220px;
+      margin-top: 120px;
     flex: 1;             
     display: flex;
     justify-content: center;
