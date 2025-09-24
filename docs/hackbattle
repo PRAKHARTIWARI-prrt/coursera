@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Halo Health</title>
+    <style>
+      #nav-list {
+  margin-top: 0;       
+}
+
+.navbar-nav {
+  margin: 0;           
+}
+
+#collapsable-nav {
+  position: absolute;
+  top: 10px;           
+  right: 20px;
+}
+
+      body {
+        font-size: 16px;
+        color: #fff;
+        background-color: #61122f;
+        font-family: 'Oxygen', sans-serif;
+        margin: 0;
+      }
+      #header-nav {
+        background-color: #f6b319;
+        border-radius: 0;
+        border: 0;
+        padding: 10px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="https://raw.githubusercontent.com/PRAKHARTIWARI-prrt/coursera/main/docs/restaurant-logo.png"
+     alt="Restaurant Logo" width="150" height="150" class="pull-left">
+
+          </div>
+          <div class="navbar-brand">
+            <a href="staticsite.html"><h1>Prakhar's Bistro</h1></a>
+            <p>
+             <span>kosher certificate</span> 
+            </p>  
+        </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">toggle navigations</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu.categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+            </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+          </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel=410-602-5008">
+              <span>410-602-5008</span></a><div>*We deliver</div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="410-602-5008">
+      <span class="glyphicon glyphicon-earphone"></span>410-602-5008
+      </a>
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">*We deliver</div>
+    <div id="main-content" class="container">
+      <div class="Jumbotron">
+        <img src="jumbotron_1200.png">
+
+      </div>
+    </div>
+  </body>
+</html>
