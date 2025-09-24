@@ -42,12 +42,12 @@
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container-fluid">
           <div class="navbar-header">
-            <img src="https://raw.githubusercontent.com/PRAKHARTIWARI-prrt/coursera/main/docs/restaurant-logo.png"
-     alt="Restaurant Logo" width="150" height="150" class="pull-left">
+            <img src="https://raw.githubusercontent.com/PRAKHARTIWARI-prrt/coursera/main/docs/3d-medical-elements-with-heartbeat_23-2151202567.png"
+     alt="Health Logo" width="150" height="150" class="pull-left">
 
           </div>
           <div class="navbar-brand">
-            <a href="staticsite.html"><h1>Prakhar's Bistro</h1></a>
+            <a href="staticsite.html"><h1>Halo health</h1></a>
             <p>
              <span>kosher certificate</span> 
             </p>  
