@@ -7,17 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <title>Halo Health</title>
   <style>
-    #nav-list {
-      margin-top: 0;
-    }
-    .navbar-nav {
-      margin: 0;
-    }
-    #collapsable-nav {
-      position: absolute;
-      top: 10px;
-      right: 20px;
-    }
     body {
       font-size: 16px;
       color: #fff;
@@ -26,69 +15,15 @@
       margin: 0;
       display: flex; 
       flex-direction: column; 
+      min-height: 100vh;
     }
+    /* Header */
     #header-nav {
       background-color: #166534;
       border-radius: 0;
       border: 0;
       padding: 10px;
     }
-    .login-box {
-      max-width: 500px;
-      overflow-y:scroll;
-      margin: 80px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 6px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
-    }
-    .login-box h3 {
-      margin-bottom: 20px;
-      border-bottom: 2px solid #166534;
-      padding-bottom: 10px;
-      font-weight: bold;
-      color: #166534;
-    }
-    .footer-links {
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      font-size: 13px;
-    }
-    .footer-links a {
-      color: #f6b319;
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-    .btn-custom {
-    background-color: #166534;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-  }
-  .btn-custom:hover {
-    background-color: #166534;
-    color: #fff;
-  }
-  .logo {
-      font-size: 20px;
-      font-weight: bold;
-      color: #166534;
-    }
-      .d {
-      background: #166534;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 16px;
-      margin-top: 40px;
-    }
-  .d h1{
-  color: #fff;
-  text-align:absolute;
-}
     .brand-text h1 {
       margin: 0;
       font-size: 28px;
@@ -99,93 +34,133 @@
       color: #f0f0f0;
       font-size: 14px;
     }
-    .sidebar{
-  width: 200px;
-  height: auto;
-  background-color: #fff;
-  border-right: 2px solid #166534;
-  padding: 20px;
-  box-sizing: border-box;
+    /* Layout container (sidebar + content) */
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      min-height: calc(100vh - 160px); /* header + footer space */
     }
-    .sidebar a{
+    /* Sidebar full height */
+    .sidebar {
+      width: 200px;
+      background-color: #fff;
+      border-right: 2px solid #166534;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar a {
       display: block;
-  margin: 15px 0;
-  color: #166534;
-  text-decoration: none;
-  font-weight: bold;
+      margin: 15px 0;
+      color: #166534;
+      text-decoration: none;
+      font-weight: bold;
     }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    /* Main content beside sidebar */
     .main-content {
-    margin-left: 220px;
-      margin-top: 120px;
-    flex: 1;             
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
-  }
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+    }
+    /* Form box */
+    .login-box {
+      width: 100%;
+      max-width: 500px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+      color: #166534;
+    }
+    .login-box h3 {
+      margin-bottom: 20px;
+      border-bottom: 2px solid #166534;
+      padding-bottom: 10px;
+      font-weight: bold;
+      color: #166534;
+    }
+    .btn-custom {
+      background-color: #166534;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .btn-custom:hover {
+      background-color: #14532d;
+      color: #fff;
+    }
+    /* Footer */
+    .d {
+      background: #166534;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 16px;
+      margin-top: auto;
+    }
+    .d h2 {
+      margin: 0;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
-  
-
+  <!-- Header -->
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-         <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png"
-     alt="Health Logo" width="100" height="100" class="pull-left">
-
+          <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png"
+            alt="Health Logo" width="80" height="80" class="pull-left">
         </div>
         <div class="brand-text">
-          <a><h1>HaloHealth</h1></a>
+          <h1>HaloHealth</h1>
           <p><span>Your Health Companion</span></p> 
         </div>
       </div>
     </nav>
-
   </header>
-  <div class="sidebar">
-  <ul class="nav navbar-nav navbar-right">
-    <li>
-        <a href="index.html">
-            <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
-    </li>
-    <li>
-        <a href="chat.html">
-            <span class="glyphicon glyphicon-comment"></span><br class="hidden-xs">Chat Assistant</a>
-    </li>
-    <li>
-        <a href="#">
-            <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
-    </li>
-</ul>
-</div> 
-  <div class="main-content">
-  <div class="login-box">
-    <h3>Enter Your Details</h3>
-    <form action="login.php" method="POST">
-      <div class="form-group">
-        <input type="number" name="age" class="form-control" placeholder="Enter age" required>
+
+  <!-- Sidebar + Main -->
+  <div class="content-wrapper">
+    <div class="sidebar">
+      <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+      <a href="chat.html"><span class="glyphicon glyphicon-comment"></span> Chat Assistant</a>
+      <a href="#"><span class="glyphicon glyphicon-info-sign"></span> About</a>
+    </div>
+
+    <div class="main-content">
+      <div class="login-box">
+        <h3>Enter Your Details</h3>
+        <form action="login.php" method="POST">
+          <div class="form-group">
+            <input type="number" name="age" class="form-control" placeholder="Enter age" required>
+          </div>
+          <div class="form-group">
+            <input type="number" name="weight" class="form-control" placeholder="Enter weight (kg)" required>
+          </div>
+          <div class="form-group">
+            <input type="number" name="height" class="form-control" placeholder="Enter height (cm)" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="gender" class="form-control" placeholder="Gender" required>
+          </div>
+          <button type="submit" class="btn btn-custom btn-block">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-        <input type="number" name="weight" class="form-control" placeholder="Enter weight (kg)" required>
-      </div>
-      <div class="form-group">
-        <input type="number" name="height" class="form-control" placeholder="Enter height (cm)" required>
-      </div>
-      <div class="form-group">
-        <input type="text" name="gender" class="form-control" placeholder="Gender" required>
-      </div>
-      <button type="submit" class="btn btn-custom btn-block">Submit</button>
-    </form>
+    </div>
   </div>
-  </div>
+
+  <!-- Footer -->
   <footer>
     <div class="d">
-    <h2> HaloHealth</h2>
-      <p>
-        @2025 Your Journey to better health starts here
-      </p>
+      <h2>HaloHealth</h2>
+      <p>@2025 Your Journey to better health starts here</p>
+    </div>
   </footer>
 </body>
 </html>
